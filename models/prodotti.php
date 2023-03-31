@@ -8,9 +8,8 @@ class Prodotti{
     public $quantità;
     public $tipologia;
 
-    public function __construct ($titolo, $codice, $prezzo, $quantità, $tipologia){
+    public function __construct ($titolo, $prezzo, $quantità, $tipologia){
         $this->titolo = $titolo;
-        $this->codice = $codice;
         $this->prezzo = $prezzo;
         $this->quantità = $quantità;
         $this->tipologia = $tipologia;

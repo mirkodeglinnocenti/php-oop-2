@@ -8,9 +8,9 @@ class Cibo extends Prodotti {
     public $peso;
     public $consistenza;
 
-    function __construct($scadenza, $categoria, $consistenza, $titolo, $codice, $prezzo, $quantità) {
+    function __construct($scadenza, $categoria, $consistenza, $titolo, $prezzo, $quantità) {
 
-        parent::__construct($titolo, $codice, $prezzo, $quantità, "cibo");
+        parent::__construct($titolo, $prezzo, $quantità, "cibo");
         $this->scadenza = $scadenza;
         $this->categoria = $categoria;
         $this->consistenza = $consistenza;
@@ -19,9 +19,5 @@ class Cibo extends Prodotti {
 
     
 }
-
-$cibo1 = new Cibo("14/05/2023", "cane", "umido", "scatoletta doggy", "ABCD456", 5, 20);
-
-var_dump($cibo1);
 
 ?>

@@ -14,7 +14,7 @@ class Categoria {
 }
 
 
-$gatto = new Categoria();
-$gatto->setTipo("gatto");
+// $gatto = new Categoria();
+// $gatto->setTipo("gatto");
 
-var_dump($gatto);
+// var_dump($gatto);

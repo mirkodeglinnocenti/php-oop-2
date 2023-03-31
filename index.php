@@ -4,12 +4,13 @@ require_once "./models/Prodotti.php";
 require_once "./models/Cibo.php";
 require_once "./models/Categoria.php";
 
-$cibo1 = new Cibo("14/05/2023", "cane", "umido", "scatoletta doggy", "ABCD456", 5, 20);
+$cibo1 = new Cibo("14/05/2023", "cane", "umido", "Scatoletta doggy", 5, 20);
 
-var_dump($cibo1);
+// var_dump($cibo1);
 
 $cibi = [
-    $cibo1
+    $cibo1,
+    new Cibo("18/08/2024", "gatto", "solido", "Croccantini special", 10, 50)
 ]
 
 ?>
