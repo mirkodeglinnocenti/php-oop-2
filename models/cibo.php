@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ "/./prodotti.php";
+require_once __DIR__ . "/./Prodotti.php";
 
 class Cibo extends Prodotti {
     public $scadenza;

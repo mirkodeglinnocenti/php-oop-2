@@ -5,9 +5,10 @@ class Categoria {
     public $tipo ="";
     public $immagine = "";
 
-    function setTipo($_tipo){
-        if ( $_tipo == "gatto" || $_tipo == "cane" ) {
-            $this->tipo = $_tipo;
+    public function setTipo($_tipo){
+
+        if (  strtolower($_tipo) == "gatto" || strtolower($_tipo) == "cane" ) {
+            $this->tipo = strtolower($_tipo);
         }
     }
 }
