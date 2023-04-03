@@ -3,6 +3,7 @@
 require_once "./models/Prodotti.php";
 require_once "./models/Cibo.php";
 require_once "./models/Categoria.php";
+require_once "./models/Cuccia.php";
 
 $cibo1 = new Cibo("14/05/2023", "cane", "umido", "Scatoletta doggy", 5, 20);
 
@@ -11,7 +12,12 @@ $cibo1 = new Cibo("14/05/2023", "cane", "umido", "Scatoletta doggy", 5, 20);
 $cibi = [
     $cibo1,
     new Cibo("18/08/2024", "gatto", "solido", "Croccantini special", 10, 50)
-]
+];
+
+$lista_cuccie = [
+    new Cuccia("80x40cm", "gatto", "poliestere,lana", "Cuccia King", 49, 12),
+    new Cuccia("140x80cm", "cane", "poliestere,cotone", "Cuccia Doggy", 89, 7)
+];
 
 ?>
 
@@ -30,7 +36,7 @@ $cibi = [
 
         <h1 class="my-5">E-commerce di prodotti per animali</h1>
 
-        <section>
+        <section class="mb-5">
             <h2>Cibo</h2>
 
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -53,6 +59,38 @@ $cibi = [
                     </div>
                 <?php
                 } ?>
+
+
+                
+            </div>
+        </section>
+
+        <section>
+            <h2>Cuccie</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <?php foreach ($lista_cuccie as $cuccia) {
+                ?>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $cuccia->titolo ?></h5>
+                                <ul>
+                                    <li><strong>Categoria:</strong> <?php echo $cuccia->categoria ?></li>
+                                    <li><strong>Dimensioni:</strong> <?php echo $cuccia->dimensioni ?></li>
+                                    <li><strong>Materiali:</strong> <?php echo $cuccia->materiali ?></li>
+                                    <li><strong>Quantità rimaste:</strong> <?php echo $cuccia->quantità ?> pezzi</li>
+                                    <li><strong>Prezzo:</strong> <?php echo $cuccia->prezzo ?>€</li>
+                                    <li><strong>Tipologia:</strong> <?php echo $cuccia->tipologia ?></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+                } ?>
+
+
+                
             </div>
         </section>
 
