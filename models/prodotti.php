@@ -12,11 +12,25 @@ class Prodotti{
     public $prezzo;
     public $quantità;
 
+    
+
     public function __construct ($titolo, $prezzo, $quantità, $tipologia){
-        $this->titolo = $titolo;
+        $this->setTitolo($titolo);
         $this->prezzo = $prezzo;
         $this->quantità = $quantità;
         $this->tipologia = $tipologia;
+    }
+
+    public function setTitolo($titolo){
+        if (is_numeric($titolo)){
+            throw new Exception("Il titolo del prodotto non può essere un numero");
+            return;
+        }
+        $this->titolo = $titolo;
+    }
+
+    public function getTitolo(){
+        return $this->titolo;
     }
 }
 

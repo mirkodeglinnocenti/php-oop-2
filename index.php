@@ -31,7 +31,7 @@ $cibi = [
         <h1 class="my-5">E-commerce di prodotti per animali</h1>
 
         <section>
-            <h2>Prodotti</h2>
+            <h2>Cibo</h2>
 
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <?php foreach ($cibi as $cibo) {
