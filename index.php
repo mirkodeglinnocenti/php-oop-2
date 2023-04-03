@@ -46,6 +46,7 @@ $cibi = [
                                     <li><strong>Scadenza:</strong> <?php echo $cibo->scadenza ?></li>
                                     <li><strong>Quantità rimaste:</strong> <?php echo $cibo->quantità ?> pezzi</li>
                                     <li><strong>Prezzo:</strong> <?php echo $cibo->prezzo ?>€</li>
+                                    <li><strong>Tipologia:</strong> <?php echo $cibo->tipologia ?></li>
                                 </ul>
                             </div>
                         </div>

@@ -16,7 +16,14 @@ class Cibo extends Prodotti {
         $this->consistenza = $consistenza;
 
     }
+     
+    public function setScadenza($scadenza){
+        $this->scadenza = $scadenza;
+    }
 
+    public function getScadenza(){
+        return $this->scadenza;
+    }
     
 }
 
