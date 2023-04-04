@@ -45,7 +45,8 @@ $lista_cuccie = [
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $cibo->titolo ?></h5>
+                                <h5 class="card-title mb-4"><?php echo $cibo->titolo ?></h5>
+                                <img src="<?php echo $cibo->categoria === "gatto" ? './img/cat.jpg' : './img/dog.jpg' ?>" class="mb-2" alt="immagine" style="max-width:200px; object-fit:cover; aspect-ratio:1/1; border-radius:20px">
                                 <ul>
                                     <li><strong>Categoria:</strong> <?php echo $cibo->categoria ?></li>
                                     <li><strong>Consistenza:</strong> <?php echo $cibo->consistenza ?></li>
@@ -74,7 +75,8 @@ $lista_cuccie = [
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $cuccia->titolo ?></h5>
+                                <h5 class="card-title mb-4"><?php echo $cuccia->titolo ?></h5>
+                                <img src="<?php echo $cuccia->categoria === "gatto" ? './img/cat.jpg' : './img/dog.jpg' ?>" class="mb-2" alt="immagine" style="max-width:200px; object-fit:cover; aspect-ratio:1/1; border-radius:20px">
                                 <ul>
                                     <li><strong>Categoria:</strong> <?php echo $cuccia->categoria ?></li>
                                     <li><strong>Dimensioni:</strong> <?php echo $cuccia->dimensioni ?></li>
